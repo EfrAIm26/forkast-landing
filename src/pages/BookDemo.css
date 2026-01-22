@@ -1,0 +1,207 @@
+.book-demo-page {
+  min-height: 100vh;
+}
+
+.book-demo-hero {
+  background: linear-gradient(135deg, var(--teal-dark), var(--teal-primary));
+  color: var(--text-white);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.book-demo-hero-content h1 {
+  color: var(--text-white);
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.book-demo-hero-content p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.team-section {
+  background-color: var(--bg-light);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+}
+
+.team-card {
+  background: var(--bg-white);
+  padding: var(--spacing-lg);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto var(--spacing-md);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--teal-primary);
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  color: var(--teal-dark);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-role {
+  color: var(--orange-cta);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.team-bio {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.demo-form-section {
+  background-color: var(--bg-white);
+}
+
+.demo-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-light);
+  padding: var(--spacing-xl);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.demo-form-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.demo-form-header h2 {
+  color: var(--teal-dark);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.demo-form-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.demo-form {
+  background: var(--bg-white);
+  padding: var(--spacing-lg);
+  border-radius: 12px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  display: block;
+  color: var(--teal-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.875rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--teal-primary);
+  box-shadow: 0 0 0 3px rgba(42, 163, 159, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.btn-submit-demo {
+  width: 100%;
+  background-color: var(--orange-cta);
+  color: var(--text-white);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s;
+  margin-top: var(--spacing-md);
+}
+
+.btn-submit-demo:hover {
+  background-color: var(--orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 122, 89, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-demo-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .book-demo-hero-content p {
+    font-size: 1rem;
+  }
+
+  .demo-form-container {
+    padding: var(--spacing-md);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-form {
+    padding: var(--spacing-md);
+  }
+}

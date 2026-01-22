@@ -1,0 +1,111 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(26, 123, 123, 0.85), rgba(26, 26, 26, 0.9)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070') center/cover;
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  text-align: center;
+}
+
+.hero-logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto var(--spacing-md);
+  filter: drop-shadow(0 0 20px rgba(42, 163, 159, 0.5));
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-lg);
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-cta {
+  background-color: var(--orange-cta);
+  color: var(--text-white);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(255, 122, 89, 0.4);
+}
+
+.btn-cta:hover {
+  background-color: var(--orange-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 122, 89, 0.6);
+}
+
+.arrow-down {
+  width: 24px;
+  height: 24px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .btn-cta {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "bookDemo": "Book a Demo",
+    "login": "Login"
+  },
+  "hero": {
+    "title": "Reward your customers.",
+    "subtitle": "Grow your business.",
+    "description": "We help restaurants and businesses reinvent how they build community and gain visibility. With innovative strategies and unique structures, we transform your digital presence into real and lasting growth.",
+    "cta": "BOOK A DEMO"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Three simple steps to transform your business",
+    "step1": {
+      "title": "Connect Your Data",
+      "description": "Quick integration with your POS system. Automatically sync sales, costs, and menus in minutes."
+    },
+    "step2": {
+      "title": "Forkast Analyzes",
+      "description": "Our system discovers patterns, tracks competitors in real-time, and optimizes pricing automatically."
+    },
+    "step3": {
+      "title": "Get Results",
+      "description": "Receive smart recommendations to increase margins, optimize menus, and make better decisions."
+    }
+  },
+  "trustedBy": {
+    "title": "Trusted By"
+  },
+  "features": {
+    "title": "Forkast Features",
+    "subtitle": "Discover the cutting-edge capabilities of Forkast, designed to optimize your pricing strategies and maximize your restaurant's profitability",
+    "pricing": {
+      "title": "Pricing Optimization",
+      "description": "Automatically adjust prices based on demand, competition, and target margins. Maximize profits without leaving money on the table."
+    },
+    "competitor": {
+      "title": "Competitor Tracking",
+      "description": "Monitor competitor prices in real-time and adjust your strategy to stay competitive in your local market."
+    },
+    "forecasting": {
+      "title": "Accurate Forecasting",
+      "description": "Predict future demand and optimize inventory and pricing to maximize profits. Make data-driven decisions."
+    },
+    "multiLocation": {
+      "title": "Multi-Location",
+      "description": "Centralized control of pricing, offers, and strategies for all your locations from a single dashboard."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real restaurants, real results",
+    "testimonial1": {
+      "text": "Since implementing Forkast, we've seen an 18% increase in our margins. The pricing optimization system is incredibly intuitive and the insights are actionable.",
+      "author": "María Fernández",
+      "position": "Operations Director",
+      "company": "Lima Restaurant Group"
+    },
+    "testimonial2": {
+      "text": "Forkast transformed how we make decisions. Now we have real-time data from all our locations and can adjust prices based on local markets. Incredible ROI.",
+      "author": "Carlos Mendoza",
+      "position": "CEO",
+      "company": "Fast Casual Restaurant Chain"
+    },
+    "testimonial3": {
+      "text": "The ability to automatically track competitors gave us a huge advantage. We know exactly when and how to adjust our offers. 25% increase in average ticket.",
+      "author": "Ana Gutiérrez",
+      "position": "General Manager",
+      "company": "Gourmet Restaurant"
+    }
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Business?",
+    "subtitle": "Join hundreds of restaurants already maximizing their margins with data-driven decisions",
+    "button": "Request Free Demo",
+    "noCredit": "No credit card required. 15-minute demo."
+  },
+  "footer": {
+    "tagline": "Rewarding customers and empowering restaurants in LATAM",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "contact": "Contact",
+    "features": "Features",
+    "pricing": "Pricing",
+    "integrations": "Integrations",
+    "about": "About Us",
+    "blog": "Blog",
+    "careers": "Careers",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookies",
+    "rights": "All rights reserved"
+  },
+  "solutions": {
+    "title": "Our Services and Products",
+    "subtitle": "Comprehensive solutions for your restaurant business growth",
+    "emailMarketing": {
+      "title": "Email Marketing & DAAS",
+      "description": "Complete email marketing and Data-as-a-Service. Build and manage your customer base with personalized automated campaigns.",
+      "features": [
+        "Automated personalized campaigns",
+        "Advanced customer segmentation",
+        "A/B testing and continuous optimization",
+        "Detailed performance reports",
+        "Complete database management"
+      ]
+    },
+    "stands": {
+      "title": "Stand Sales for Promotion & Customer Loyalty",
+      "description": "We create and sell customized stands for food events, festivals, and fairs. Strategic spaces designed to promote your brand and build customer loyalty.",
+      "features": [
+        "Customized stand design",
+        "Promotion and loyalty strategy",
+        "Marketing materials included",
+        "Premium event locations",
+        "Impact and engagement analysis"
+      ]
+    },
+    "digitalPresence": {
+      "title": "Digital Presence Optimization",
+      "description": "Maximize your visibility on delivery and reservation platforms (Rappi, Uber Eats, PedidosYa, OpenTable). Optimized strategies to increase conversions.",
+      "features": [
+        "Platform profile optimization",
+        "Professional menu and photography management",
+        "Effective promotion strategies",
+        "Continuous competition monitoring",
+        "Metrics and KPI analysis"
+      ]
+    },
+    "pricingOptimization": {
+      "title": "Pricing Optimization Software",
+      "description": "Our main platform: predictive analysis, competitor tracking, and automatic price adjustment to maximize margins without losing customers.",
+      "features": [
+        "Price elasticity analysis",
+        "24/7 competitor tracking",
+        "AI-based recommendations",
+        "Multi-location dashboard",
+        "Predictive demand forecasting"
+      ]
+    }
+  },
+  "bookDemo": {
+    "title": "Meet the Team",
+    "subtitle": "Technology and gastronomy experts transforming the restaurant industry",
+    "formTitle": "Schedule Your Personalized Demo",
+    "formSubtitle": "Share your details and let's explore together how Forkast can transform your business",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "company": "Restaurant/Company Name",
+    "phone": "Phone",
+    "businessType": "Business Type",
+    "businessTypes": {
+      "singleLocation": "Single Location Restaurant",
+      "chain": "Chain (2-10 locations)",
+      "franchise": "Franchise (10+ locations)",
+      "group": "Restaurant Group",
+      "other": "Other"
+    },
+    "message": "Tell us about your business",
+    "submit": "Request Demo",
+    "team": {
+      "gonzalo": {
+        "name": "Gonzalo Mesía",
+        "role": "Co-Founder",
+        "bio": "E-Box Holdings Founder. E-commerce brand portfolio strategist. B2C and B2B brand creator focused on innovation, positioning, and scalability."
+      },
+      "mohit": {
+        "name": "Mohit Balani",
+        "role": "Co-Founder",
+        "bio": "Ex-Rappi, Ex-BCP. Experience in digital platform subscription programs and payment systems (Rappi Prime, BCP Value Proposition)."
+      },
+      "joseph": {
+        "name": "Joseph Saavedra",
+        "role": "Advisor, Acting CTO",
+        "bio": "Founder & CEO Infinite Objects, launched in 2019. Raised +$11M in investment, generating +$14M in revenue. +15 years of software development experience."
+      }
+    }
+  }
+}
