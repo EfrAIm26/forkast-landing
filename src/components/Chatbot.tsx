@@ -172,12 +172,12 @@ Respond concisely (2-3 sentences max), professionally, and always move the conve
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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',
+          'Authorization': 'Bearer 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',
           'HTTP-Referer': window.location.origin,
           'X-Title': 'Forkast Chatbot'
         },
         body: JSON.stringify({
-          model: 'google/gemini-2.0-flash-exp:free',
+          model: 'openai/gpt-4o-mini',
           messages: [
             { role: 'system', content: systemPrompt },
             ...messages.map(m => ({ role: m.role, content: m.content })),
