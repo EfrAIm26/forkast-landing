@@ -177,7 +177,7 @@ Respond concisely (2-3 sentences max), professionally, and always move the conve
           'X-Title': 'Forkast Chatbot'
         },
         body: JSON.stringify({
-          model: 'google/gemini-3-flash-preview',
+          model: 'google/gemini-2.0-flash-exp:free',
           messages: [
             { role: 'system', content: systemPrompt },
             ...messages.map(m => ({ role: m.role, content: m.content })),
