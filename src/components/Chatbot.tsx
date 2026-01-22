@@ -9,7 +9,7 @@ interface Message {
 }
 
 const Chatbot = () => {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([])
   const [inputValue, setInputValue] = useState('')
