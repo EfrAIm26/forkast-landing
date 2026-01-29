@@ -168,11 +168,16 @@ Respond concisely (2-3 sentences max), professionally, and always move the conve
     setIsLoading(true)
 
     try {
+      // Usar variable de entorno de Vercel o fallback para desarrollo local
+      // En Vercel, la variable debe llamarse: VITE_OPENROUTER_API_KEY
+      const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY || 
+                     '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'
+      
       const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer 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',
+          'Authorization': `Bearer ${apiKey}`,
           'HTTP-Referer': window.location.origin,
           'X-Title': 'Forkast Chatbot'
         },
@@ -189,10 +194,14 @@ Respond concisely (2-3 sentences max), professionally, and always move the conve
       })
 
       if (!response.ok) {
-        throw new Error('Failed to get response')
+        const errorData = await response.json()
+        console.error('API Error:', errorData)
+        throw new Error(`API Error: ${JSON.stringify(errorData)}`)
       }
 
       const data = await response.json()
+      console.log('API Response:', data)
+      
       const assistantMessage: Message = {
         role: 'assistant',
         content: data.choices[0].message.content,
@@ -201,7 +210,7 @@ Respond concisely (2-3 sentences max), professionally, and always move the conve
 
       setMessages(prev => [...prev, assistantMessage])
     } catch (error) {
-      console.error('Error sending message:', error)
+      console.error('Error completo:', error)
       const errorMessage: Message = {
         role: 'assistant',
         content: i18n.language === 'es' 
