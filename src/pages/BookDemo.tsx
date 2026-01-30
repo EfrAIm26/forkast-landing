@@ -46,6 +46,12 @@ const BookDemo = () => {
       role: t('bookDemo.team.joseph.role'),
       bio: t('bookDemo.team.joseph.bio'),
       image: '/JosephSaavedra.jpg'
+    },
+    {
+      name: t('bookDemo.team.efraim.name'),
+      role: t('bookDemo.team.efraim.role'),
+      bio: t('bookDemo.team.efraim.bio'),
+      image: '/efraimrodriguez.jpg'
     }
   ]
 

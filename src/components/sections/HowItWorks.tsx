@@ -1,9 +1,11 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import './HowItWorks.css'
 
 const HowItWorks = () => {
   const { t } = useTranslation()
+  const [expandedStep, setExpandedStep] = useState<number | null>(null)
 
   const steps = [
     {
@@ -12,7 +14,7 @@ const HowItWorks = () => {
       description: t('howItWorks.step1.description'),
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
         </svg>
       )
     },
@@ -32,11 +34,15 @@ const HowItWorks = () => {
       description: t('howItWorks.step3.description'),
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
         </svg>
       )
     }
   ]
+
+  const toggleStep = (index: number) => {
+    setExpandedStep(expandedStep === index ? null : index)
+  }
 
   return (
     <section className="how-it-works section">
@@ -60,12 +66,34 @@ const HowItWorks = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="step-card"
+              className={`step-card ${expandedStep === index ? 'expanded' : ''}`}
+              onClick={() => toggleStep(index)}
+              whileHover={{ scale: 1.03 }}
+              style={{ cursor: 'pointer' }}
             >
               <div className="step-number">{step.number}</div>
               <div className="step-icon">{step.icon}</div>
               <h3>{step.title}</h3>
-              <p>{step.description}</p>
+              <AnimatePresence>
+                {expandedStep === index && (
+                  <motion.p
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {step.description}
+                  </motion.p>
+                )}
+                {expandedStep !== index && (
+                  <motion.p
+                    initial={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    {step.description}
+                  </motion.p>
+                )}
+              </AnimatePresence>
             </motion.div>
           ))}
         </div>

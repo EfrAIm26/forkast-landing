@@ -15,16 +15,16 @@
     "title": "¿Cómo Funciona?",
     "subtitle": "Tres pasos simples para transformar tu negocio",
     "step1": {
-      "title": "Conecta tus Datos",
-      "description": "Integración rápida con tu sistema POS. Sincroniza automáticamente ventas, costos y menús en minutos."
+      "title": "Recolecta Datos",
+      "description": "Promos y sorteos por QR/WhatsApp para registrar clientes en segundos y crear tu base de datos."
     },
     "step2": {
-      "title": "Forkast Analiza",
-      "description": "Nuestro sistema descubre patrones, rastrea competidores en tiempo real y optimiza precios automáticamente."
+      "title": "Analiza la Información",
+      "description": "Métricas + IA para entender recurrencia, segmentar clientes y detectar oportunidades de crecimiento."
     },
     "step3": {
-      "title": "Obtén Resultados",
-      "description": "Recibe recomendaciones inteligentes para aumentar márgenes, optimizar menús y tomar mejores decisiones."
+      "title": "Activa Campañas",
+      "description": "Campañas por WhatsApp/Email/Redes para que vuelvan más seguido, impulsar reseñas y aumentar ventas."
     }
   },
   "trustedBy": {
@@ -34,15 +34,15 @@
     "title": "Forkast Features",
     "subtitle": "Descubre las capacidades de Forkast diseñadas para optimizar tu estrategia de precios y maximizar la rentabilidad de tu restaurante",
     "pricing": {
-      "title": "Optimización de Precios",
-      "description": "Ajusta precios automáticamente basado en demanda, competencia y márgenes objetivo. Maximiza ganancias sin dejar dinero sobre la mesa."
+      "title": "Campañas de Email y WhatsApp Marketing",
+      "description": "Automatiza campañas personalizadas por email y WhatsApp para aumentar la frecuencia de visita, impulsar reseñas y fidelizar clientes."
     },
     "competitor": {
       "title": "Seguimiento de Competidores",
       "description": "Monitorea precios de competidores en tiempo real y ajusta tu estrategia para mantenerte competitivo en tu mercado local."
     },
     "forecasting": {
-      "title": "Pronósticos Precisos",
+      "title": "Pronóstico de la Demanda",
       "description": "Predice demanda futura y optimiza inventario y precios para maximizar ganancias. Toma decisiones basadas en datos."
     },
     "multiLocation": {
@@ -99,14 +99,14 @@
     "title": "Nuestros Servicios y Productos",
     "subtitle": "Soluciones integrales para el crecimiento de tu negocio gastronómico",
     "emailMarketing": {
-      "title": "Email Marketing y DAAS",
-      "description": "Servicio completo de email marketing y Data-as-a-Service. Construye y gestiona tu base de clientes con campañas automatizadas personalizadas.",
+      "title": "Email Marketing y WhatsApp Marketing DAAS",
+      "description": "Servicio completo de marketing multicanal y Data-as-a-Service. Automatiza campañas por email y WhatsApp para aumentar visitas, impulsar reseñas y fidelizar clientes.",
       "features": [
-        "Campañas personalizadas automatizadas",
-        "Segmentación avanzada de clientes",
-        "A/B testing y optimización continua",
-        "Reportes detallados de performance",
-        "Gestión completa de base de datos"
+        "Campañas automatizadas por Email y WhatsApp",
+        "Segmentación inteligente de clientes",
+        "Gestión completa de base de datos",
+        "Sorteos y promos por QR/WhatsApp",
+        "Análisis de métricas y recurrencia"
       ]
     },
     "stands": {
@@ -132,14 +132,14 @@
       ]
     },
     "pricingOptimization": {
-      "title": "Software de Optimización de Precios",
-      "description": "Nuestra plataforma principal: análisis predictivo, seguimiento de competidores y ajuste automático de precios para maximizar márgenes sin perder clientes.",
+      "title": "Software de Seguimiento de la Demanda y la Competencia",
+      "description": "Plataforma de análisis predictivo y seguimiento en tiempo real de competidores. Optimiza inventario, precios y estrategias con datos precisos e IA.",
       "features": [
-        "Análisis de elasticidad de precios",
         "Seguimiento de competidores 24/7",
-        "Recomendaciones basadas en IA",
-        "Dashboard multi-ubicación",
-        "Forecasting de demanda predictivo"
+        "Pronóstico de demanda con IA",
+        "Análisis de patrones de compra",
+        "Dashboard multi-ubicación en tiempo real",
+        "Alertas y recomendaciones inteligentes"
       ]
     }
   },
@@ -178,6 +178,11 @@
         "name": "Joseph Saavedra",
         "role": "Advisor, Acting CTO",
         "bio": "Founder & CEO Infinite Objects. +15 años desarrollando software. +$11M levantado generando +$14M en revenue."
+      },
+      "efraim": {
+        "name": "Efraim Rodriguez",
+        "role": "Growth Partner",
+        "bio": "University Peruvian Blitz Champion 2024, UP Champion 2024 y 2022, Exatunc Project Leader. Especialista en estrategias de crecimiento y optimización."
       }
     }
   }

@@ -15,16 +15,16 @@
     "title": "How It Works",
     "subtitle": "Three simple steps to transform your business",
     "step1": {
-      "title": "Connect Your Data",
-      "description": "Quick integration with your POS system. Automatically sync sales, costs, and menus in minutes."
+      "title": "Collect Data",
+      "description": "QR/WhatsApp promotions and giveaways to register customers in seconds and build your database."
     },
     "step2": {
-      "title": "Forkast Analyzes",
-      "description": "Our system discovers patterns, tracks competitors in real-time, and optimizes pricing automatically."
+      "title": "Analyze Information",
+      "description": "Metrics + AI to understand recurrence, segment customers, and detect growth opportunities."
     },
     "step3": {
-      "title": "Get Results",
-      "description": "Receive smart recommendations to increase margins, optimize menus, and make better decisions."
+      "title": "Activate Campaigns",
+      "description": "WhatsApp/Email/Social campaigns to bring them back more often, boost reviews, and increase sales."
     }
   },
   "trustedBy": {
@@ -34,15 +34,15 @@
     "title": "Forkast Features",
     "subtitle": "Discover the cutting-edge capabilities of Forkast, designed to optimize your pricing strategies and maximize your restaurant's profitability",
     "pricing": {
-      "title": "Pricing Optimization",
-      "description": "Automatically adjust prices based on demand, competition, and target margins. Maximize profits without leaving money on the table."
+      "title": "Email and WhatsApp Marketing Campaigns",
+      "description": "Automate personalized email and WhatsApp campaigns to increase visit frequency, boost reviews, and retain customers."
     },
     "competitor": {
       "title": "Competitor Tracking",
       "description": "Monitor competitor prices in real-time and adjust your strategy to stay competitive in your local market."
     },
     "forecasting": {
-      "title": "Accurate Forecasting",
+      "title": "Demand Forecasting",
       "description": "Predict future demand and optimize inventory and pricing to maximize profits. Make data-driven decisions."
     },
     "multiLocation": {
@@ -178,6 +178,11 @@
         "name": "Joseph Saavedra",
         "role": "Advisor, Acting CTO",
         "bio": "Founder & CEO Infinite Objects, launched in 2019. Raised +$11M in investment, generating +$14M in revenue. +15 years of software development experience."
+      },
+      "efraim": {
+        "name": "Efraim Rodriguez",
+        "role": "Growth Partner",
+        "bio": "University Peruvian Blitz Champion 2024, UP Champion 2024 & 2022, Exatunc Project Leader. Growth strategies and optimization specialist."
       }
     }
   }
